@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInfoActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_back_tele"
+        android:contentDescription="Back"
+        android:onClick="onBackTelephoneClick"/>
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Nhập Thông Tin Khách Hàng"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/backgroundMain"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/headerText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edt_bg"
+        android:hint="Họ và Tên" />
+
+    <EditText
+        android:id="@+id/editTextCustomerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/editTextCustomerName"
+        android:layout_margin="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/rounded_edt_bg"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/editTextCustomerEmail"
+        android:layout_margin="16dp"
+        android:inputType="phone"
+        android:hint="Số Điện Thoại"
+        android:background="@drawable/rounded_edt_bg"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextCustomerPhone"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/backgroundMain"
+        android:text="Xác Nhận" />
+
+</RelativeLayout>

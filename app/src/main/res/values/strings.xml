@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Events</string>
+    <string name="email">Email or Username</string>
+    <string name="passworld">PassWorld</string>
+</resources>
